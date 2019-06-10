@@ -1,0 +1,83 @@
+/******** 1. GENERELLE INDSTILLINGER ********/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/********* 2. NAV + BURGER *********/
+
+
+
+.sidemenu {
+    height: 657px;
+    width: 180px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 180px;
+    z-index: 10;
+    padding: 15px;
+    line-height: 50px;
+    transition: background 300ms ease;
+    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #0000ff;
+    font-family: mono45-headline, monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 0 0 0;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.nav:hover {
+    background-color: #0000ff;
+}
+
+.nav:hover a {
+    color: white
+}
+
+.nav a:hover {
+    color: black;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+}
+
+/********* 3. HJEM *********/
+
+#hjem_section {
+    display: flex;
+    flex-wrap: wrap;
+}
