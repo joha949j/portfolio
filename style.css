@@ -91,7 +91,7 @@ body {
 .box {
     background-color: white;
     width: 333px;
-    height: 333px;
+    height: 303px;
     text-align: center;
     margin: auto;
 }
@@ -101,5 +101,5 @@ body {
 }
 
 .box:hover p {
-    color: white;
+    color: black;
 }
