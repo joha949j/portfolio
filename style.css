@@ -6,6 +6,7 @@
 
 html {
     font-size: 100%;
+
 }
 
 body {
@@ -62,7 +63,52 @@ body {
 }
 
 
-/********* 3. HJEM *********/
+
+
+/********* 3. FORSIDE *********/
+
+
+
+#fp_header {
+    background-image: url(img/landingpage2.png);
+    height: 100vh;
+    width: 100vw;
+    max-width: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+input[type=submit] {
+    padding: 10px 15px;
+    margin: 10px 20px;
+    box-sizing: border-box;
+    /* border-radius: 100px;*/
+    border: 0px solid;
+    background-color: #000000;
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #0000ff;
+    color: white;
+
+}
+
+@media only screen and (min-width: 177px) {
+    #fp_header {
+        background-position: 50% 0%
+    }
+}
+
+
+/********* 4. OM MIG *********/
 
 .wrapper {
     display: flex;
