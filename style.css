@@ -31,6 +31,7 @@ body {
     transition: background 300ms ease;
     animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: 100;
+    background-color: white;
 }
 
 .nav a {
@@ -89,6 +90,7 @@ body {
     z-index: 1000;
     padding: 15px;
     line-height: 30px;
+    opacity: 0.5;
 }
 
 .menu a {
@@ -124,8 +126,6 @@ body {
 
 /********* 3. FORSIDE *********/
 
-
-
 #fp_header {
     background-image: url(img/landingpage2.png);
     height: 100vh;
@@ -143,7 +143,6 @@ input[type=submit] {
     padding: 10px 15px;
     margin: 10px 20px;
     box-sizing: border-box;
-    /* border-radius: 100px;*/
     border: 0px solid;
     background-color: #000000;
     font-family: source-code-pro, monospace;
@@ -168,8 +167,8 @@ input[type=submit]:hover {
 .wrapper_info {
     display: flex;
     flex-wrap: wrap;
-    background-color: #0000ff;
-    z-index: -1
+    background-color: #333333;
+    height: 100%;
 }
 
 .info_con {
@@ -180,8 +179,7 @@ input[type=submit]:hover {
     justify-content: space-evenly;*/
     padding-top: 50px;
     width: 80%;
-    background-color: #0000ff;
-    height: 100vh;
+    height: 100%;
 }
 
 .overskrift {
@@ -193,26 +191,25 @@ input[type=submit]:hover {
 
 .overskrift h1 {
     font-family: sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     display: flex;
     flex-wrap: flex;
     text-align: top;
     max-height: 220px;
     max-width: 700px;
+    margin: 0 0 0 0;
 }
 
 .info_text {
     position: relative;
     z-index: 1000;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 600;
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
     font-style: normal;
     color: white;
     height: 100%;
-    max-width: 800px;
-    line-height: 30px;
-
-
+    line-height: 29px;
+    width: 100%;
 }
 
 .info_text img {
@@ -223,47 +220,80 @@ input[type=submit]:hover {
     top: -3vw;
     z-index: -1;
     opacity: 0.8;
-
 }
 
-/********* 5. UX *********/
+.scrollingtext {
+    margin-left: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrolling 10s infinite linear;
+    padding-top: 10px;
+}
 
-.wrapper {
+.scrollingtext a {
+    font-family: sans-serif;
+    font-size: 3em;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: flex;
 }
 
-.ux_con1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    width: 989px;
-    height: 100%;
+.scrollingtext a:hover {
+    color: red;
 }
 
-.ux_con1 p {
-    font-family: source-code-pro, monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: #0000ff;
+@keyframes scrolling {
+    to {
+        transform: translateX(0);
+    }
 
-}
+    from {
+        transform: translateX(100%);
+    }
 
-.box {
-    background-color: white;
-    width: 333px;
-    height: 303px;
-    text-align: center;
-    margin: auto;
-}
+    /*@keyframes scrolling {
+    to {
+        transform: translateX(-100%);
+    }
+}*/
 
-.box:hover {
-    background-color: #ffd7e7;
-}
+    /********* 5. UX *********/
 
-.box:hover p {
-    color: black;
-}
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ux_con1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        width: 989px;
+        height: 100%;
+    }
+
+    .ux_con1 p {
+        font-family: source-code-pro, monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: #0000ff;
+
+    }
+
+    .box {
+        background-color: white;
+        width: 333px;
+        height: 303px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .box:hover {
+        background-color: #ffd7e7;
+    }
+
+    .box:hover p {
+        color: black;
+    }
