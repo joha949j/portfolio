@@ -30,6 +30,7 @@ body {
     line-height: 50px;
     transition: background 300ms ease;
     animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 100;
 }
 
 .nav a {
@@ -113,7 +114,7 @@ body {
         display: none;
     }
 
-    .hp_con1 {
+    .ux_con1 {
         padding-top: 0px;
     }
 }
@@ -163,15 +164,76 @@ input[type=submit]:hover {
     }
 }
 
-
 /********* 4. OM MIG *********/
+.wrapper_info {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #0000ff;
+    z-index: -1
+}
+
+.info_con {
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;*/
+    padding-top: 50px;
+    width: 80%;
+    background-color: #0000ff;
+    height: 100vh;
+}
+
+.overskrift {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    z-index: 100;
+}
+
+.overskrift h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    display: flex;
+    flex-wrap: flex;
+    text-align: top;
+    max-height: 220px;
+    max-width: 700px;
+}
+
+.info_text {
+    position: relative;
+    z-index: 1000;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    height: 100%;
+    max-width: 800px;
+    line-height: 30px;
+
+
+}
+
+.info_text img {
+    position: absolute;
+    max-height: 400px;
+    max-width: 400px;
+    right: -1vw;
+    top: -3vw;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+/********* 5. UX *********/
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
-.hp_con1 {
+.ux_con1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -182,7 +244,7 @@ input[type=submit]:hover {
     height: 100%;
 }
 
-.hp_con1 p {
+.ux_con1 p {
     font-family: source-code-pro, monospace;
     font-weight: 400;
     font-style: normal;
