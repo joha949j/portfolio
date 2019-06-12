@@ -115,10 +115,6 @@ body {
     .nav {
         display: none;
     }
-
-    .ux_con1 {
-        padding-top: 0px;
-    }
 }
 
 
@@ -249,51 +245,51 @@ input[type=submit]:hover {
     from {
         transform: translateX(100%);
     }
+}
 
-    /*@keyframes scrolling {
+/*@keyframes scrolling {
     to {
         transform: translateX(-100%);
     }
 }*/
 
-    /********* 5. UX *********/
+/********* 5. UX *********/
+.ux_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
+.ux_con1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    width: 80%;
+    height: 100%;
+    margin-left: 70px;
+}
 
-    .ux_con1 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-evenly;
-        padding-top: 50px;
-        width: 989px;
-        height: 100%;
-    }
+.ux_con1 p {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000ff;
 
-    .ux_con1 p {
-        font-family: source-code-pro, monospace;
-        font-weight: 400;
-        font-style: normal;
-        color: #0000ff;
+}
 
-    }
+.box {
+    background-color: white;
+    width: 333px;
+    height: 333px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+}
 
-    .box {
-        background-color: white;
-        width: 333px;
-        height: 303px;
-        text-align: center;
-        margin: auto;
-    }
+.box:hover {
+    background-color: #ffd7e7;
+}
 
-    .box:hover {
-        background-color: #ffd7e7;
-    }
-
-    .box:hover p {
-        color: black;
-    }
+.box:hover p {
+    color: black;
+}
