@@ -1,12 +1,4 @@
-/*
-let burger = document.querySelector("#burger");
-let menu = document.querySelector(".menu");
-
-*/
-/*function burgerMenu() {
-    console.log("burgerMenu");*/
 document.querySelector("#burger").addEventListener("click", openNav);
-/*}*/
 
 function openNav() {
     console.log("openNav");

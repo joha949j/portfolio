@@ -338,3 +338,49 @@ input[type=submit]:hover {
 .webbox:hover {
     background-color: #79e0e7;
 }
+
+/********* 7. ANIMATION *********/
+.ani_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ani_con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    width: 80%;
+    height: 100vh;
+}
+
+.anibox:hover {
+    background-color: #00df8d;
+}
+
+/********* 7. ANIMATION *********/
+
+
+.ind_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ind_con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    width: 80%;
+    height: 100vh;
+}
+
+.indbox {
+    margin-left: 70px;
+}
+
+.indbox:hover {
+    background-color: orange;
+}
