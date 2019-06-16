@@ -496,6 +496,28 @@ h4 {
     display: none;
 }
 
+.ballin_tekst {
+    width: 70%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.ballin {
+    width: 50%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.mobil {
+    height: 60%;
+    width: auto;
+    padding-top: 20px;
+}
+
+.anibox:hover img {
+    display: none;
+}
+
 /********* 8. INDHOLD *********/
 
 
