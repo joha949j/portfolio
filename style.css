@@ -123,7 +123,7 @@ body {
 /********* 3. FORSIDE *********/
 
 #fp_header {
-    background-image: url(img/landingpage2.png);
+    background-image: url(img/landingpage4.png);
     height: 100vh;
     width: 100vw;
     max-width: none;
@@ -140,16 +140,17 @@ input[type=submit] {
     margin: 10px 20px;
     box-sizing: border-box;
     border: 0px solid;
-    background-color: #000000;
+    background-color: #0000ff;
     font-family: source-code-pro, monospace;
     font-weight: 400;
     font-style: normal;
     color: white;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #0000ff;
-    color: black;
+    background-color: #000000;
+    color: white;
 
 }
 
@@ -163,16 +164,13 @@ input[type=submit]:hover {
 .wrapper_info {
     display: flex;
     flex-wrap: wrap;
-    background-color: #333333;
+    background-color: #ffd7e7;
     height: 100%;
 }
 
 .info_con {
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;*/
     padding-top: 50px;
     width: 80%;
     height: 100%;
@@ -188,8 +186,11 @@ input[type=submit]:hover {
 }
 
 .overskrift h1 {
-    font-family: sans-serif;
-    font-size: 4em;
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-decoration: underline;
     display: flex;
     flex-wrap: flex;
     text-align: top;
@@ -204,7 +205,7 @@ input[type=submit]:hover {
     font-family: source-code-pro, monospace;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: black;
     height: 100%;
     line-height: 29px;
     width: 100%;
@@ -234,11 +235,11 @@ input[type=submit]:hover {
     font-size: 3em;
     display: flex;
     flex-wrap: flex;
-
+    color: #0000ff;
 }
 
 .scrollingtext a:hover {
-    color: red;
+    color: black;
 }
 
 @keyframes scrolling {
@@ -285,27 +286,43 @@ input[type=submit]:hover {
     text-align: top;
 }
 
-.box p {
+.uxbox p {
     font-family: source-code-pro, monospace;
     font-weight: 400;
     font-style: normal;
     color: #0000ff;
+    font-size: 0.8rem;
+    line-height: 1.35;
 }
 
-.box {
+.uxbox {
     background-color: white;
     width: 333px;
     height: 333px;
     text-align: center;
     margin: 5px 5px 5px 5px;
+    transition: background 300ms ease;
+    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.box:hover {
-    background-color: #ffd7e7;
+.uxbox:hover {
+    background-color: #25FF2B;
 }
 
-.box:hover p {
+.uxbox:hover h4 {
     color: black;
+}
+
+.uxbox:hover p {
+    color: white;
+}
+
+.uxbox:hover .uxtxt {
+    display: block;
+}
+
+.uxtxt {
+    display: none;
 }
 
 
@@ -326,10 +343,24 @@ input[type=submit]:hover {
     height: 100vh;
 }
 
-.webbox {
-    margin-left: 70px;
+.webbox p,
+h4 {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000ff;
 }
 
+.webbox {
+    background-color: white;
+    width: 333px;
+    height: 333px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    margin-left: 100px;
+    transition: background 300ms ease;
+    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
 .webbox a {
     text-decoration: none;
@@ -338,6 +369,28 @@ input[type=submit]:hover {
 .webbox:hover {
     background-color: #79e0e7;
 }
+
+.webbox:hover h4 {
+    color: black;
+}
+
+.webbox:hover p {
+    color: white;
+}
+
+.webtxt p {
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+.webbox:hover .webtxt {
+    display: block;
+}
+
+.webtxt {
+    display: none;
+}
+
 
 /********* 7. ANIMATION *********/
 .ani_wrapper {
@@ -353,13 +406,50 @@ input[type=submit]:hover {
     padding-top: 50px;
     width: 80%;
     height: 100vh;
+    margin-left: 70px;
+}
+
+
+.anibox p {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000ff;
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+.anibox {
+    background-color: white;
+    width: 333px;
+    height: 333px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    transition: background 300ms ease;
+    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .anibox:hover {
     background-color: #00df8d;
 }
 
-/********* 7. ANIMATION *********/
+.anibox:hover h4 {
+    color: black;
+}
+
+.anibox:hover p {
+    color: white;
+}
+
+.anibox:hover .anitxt {
+    display: block;
+}
+
+.anitxt {
+    display: none;
+}
+
+/********* 8. INDHOLD *********/
 
 
 .ind_wrapper {
@@ -382,5 +472,44 @@ input[type=submit]:hover {
 }
 
 .indbox:hover {
-    background-color: orange;
+    background-color: #FFEC00;
+}
+
+.indbox:hover h4 {
+    color: black;
+}
+
+.indbox:hover p {
+    color: white;
+}
+
+.indbox:hover .indtxt {
+    display: block;
+}
+
+.indtxt {
+    display: none;
+}
+
+.indbox p {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000ff;
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+.indbox {
+    background-color: white;
+    width: 333px;
+    height: 333px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    transition: background 300ms ease;
+    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.indbox a {
+    text-decoration: none;
 }
