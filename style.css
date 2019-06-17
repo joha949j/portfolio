@@ -359,6 +359,29 @@ input[type=submit]:hover {
     display: none;
 }
 
+.moon {
+    width: 45%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.postit {
+    height: 50%;
+    width: auto;
+    padding-top:
+}
+
+.kea {
+    width: 50%;
+    height: auto;
+    padding-top: 40px;
+}
+
+
+.uxbox:hover img {
+    display: none;
+}
+
 
 /********* 6. WEB *********/
 
