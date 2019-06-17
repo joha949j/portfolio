@@ -74,14 +74,14 @@ body {
     font-weight: 600;
     font-style: italic;
     cursor: pointer;
+    color: #0000ff;
+    font-size: 1.5rem;
 }
-
-.menu {}
 
 .menu a {
     text-decoration: none;
     text-decoration-line: none;
-    color: black;
+    color: #0000ff;
     font-family: neue-haas-grotesk-display, sans-serif;
     font-weight: 600;
     font-style: italic;
@@ -92,8 +92,12 @@ body {
     line-height: 30px;
 }
 
+#burger p:hover {
+    color: black;
+}
+
 .menu a:hover {
-    color: #0000ff
+    color: black;
 }
 
 @media screen and (max-width: 1186px) {
