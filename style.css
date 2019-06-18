@@ -136,25 +136,9 @@ a:target {
 .navn {
     background-image: url(img/Artboard%204.svg);
     background-size: cover;
-    height: 10vw;
+    height: 8vw;
     width: 52vw;
 }
-
-
-/*@keyframes move {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        left: 50%;
-    }
-
-    100% {
-        left: 10%;
-    }
-
-}*/
 
 input[type=submit] {
     padding: 10px 15px;
