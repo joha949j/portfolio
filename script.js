@@ -1,13 +1,20 @@
-document.querySelector("#burger").addEventListener("click", openNav);
+window.addEventListener("load", sidenVises);
 
-function openNav() {
-    console.log("openNav");
-    document.querySelector(".menu").classList.remove("hidden");
-    document.querySelector("#burger").addEventListener("click", closeNav);
+function sidenVises() {
+    console.log("sidenVises");
+    document.querySelector("#menu_burger").addEventListener("click", foldUd);
 }
 
-function closeNav() {
-    console.log("closeNav");
-    document.querySelector(".menu").classList.add("hidden");
 
+function foldUd() {
+    console.log("foldUd");
+    document.querySelector(".menu").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector(".menu").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.querySelector("#menu_burger").addEventListener("click", toggleMenu)
+    } else {
+        document.querySelector("#menu_burger").addEventListener("click", toggleMenu)
+    }
 }

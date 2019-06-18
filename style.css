@@ -110,8 +110,12 @@ body {
     }
 }
 
+/*
+a:target {
+    color: green;
+}
 
-
+*/
 
 /********* 3. FORSIDE *********/
 
@@ -130,7 +134,7 @@ body {
 }
 
 .navn {
-    /*background-image: url(img/Artboard%204.svg);*/
+    background-image: url(img/Artboard%204.svg);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -557,7 +561,8 @@ h4 {
 }
 
 .indbox:hover {
-    background-color: #FFEC00;
+    background-color: #bc13fe;
+    /*#FFEC00;*/
 }
 
 .indbox:hover h4 {
