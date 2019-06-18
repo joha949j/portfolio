@@ -6,7 +6,6 @@
 
 html {
     font-size: 100%;
-
 }
 
 body {
@@ -15,12 +14,14 @@ body {
 }
 
 
-
 /********* 2. NAV + BURGER *********/
+
+/*Hidden class*/
 .hidden {
     visibility: hidden;
 }
 
+/*Div til desktop menu(Dmenu) */
 .nav {
     display: flex;
     flex-direction: column;
@@ -32,9 +33,9 @@ body {
     animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     z-index: 100;
     background-color: white;
-
 }
 
+/*desktop menu tekst*/
 .nav a {
     text-decoration: none;
     text-decoration-line: none;
@@ -46,19 +47,22 @@ body {
     margin-left: 50px;
 }
 
-
+/*Hover farve Dmenu*/
 .nav:hover {
     background-color: #0000ff;
 }
 
+/*Tekst til dmenu hover*/
 .nav:hover a {
     color: white
 }
 
+/*Hover over tekst til dmenu*/
 .nav a:hover {
     color: black;
 }
 
+/*Mobil menu div (Mmenu) */
 #burger {
     display: none;
     height: 30px;
@@ -68,6 +72,7 @@ body {
 
 }
 
+/*Menu teksten, du trykker på så menuen kommero*/
 #burger p {
     margin-left: 50px;
     font-family: neue-haas-grotesk-display, sans-serif;
@@ -78,6 +83,7 @@ body {
     font-size: 1.5rem;
 }
 
+/*Mmenu a/tekst deco*/
 .menu a {
     text-decoration: none;
     text-decoration-line: none;
@@ -92,47 +98,26 @@ body {
     line-height: 30px;
 }
 
-#burger p:hover {
-    color: black;
-}
-
+/*Hover over Menu og Mmenu tekst*/
+#burger p:hover,
 .menu a:hover {
     color: black;
 }
 
-@media screen and (max-width: 1186px) {
-    #burger {
-        display: block;
-    }
-
-    .nav {
-        display: none;
-    }
-}
-
-/*
-a:target {
-    color: green;
-}
-
-*/
-
 /********* 3. FORSIDE *********/
 
+/*Baggrunds billede forsiden */
 #fp_header {
     background-image: url(img/landingpage5.png);
     height: 100vh;
-    width: 100vw;
-    max-width: none;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
+/*Navnet til forside*/
 .navn {
     background-image: url(img/Artboard%204.svg);
     background-size: cover;
@@ -140,6 +125,7 @@ a:target {
     width: 52vw;
 }
 
+/*Design af enter knap*/
 input[type=submit] {
     padding: 10px 15px;
     margin: 10px 20px;
@@ -153,28 +139,22 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/*design knap hover*/
 input[type=submit]:hover {
     background-color: #000000;
     color: white;
-
-}
-
-@media only screen and (min-width: 177px) {
-    #fp_header {
-        background-position: 50% 0%
-    }
 }
 
 /********* 4. OM MIG *********/
+
+/*Parent section div*/
 .wrapper_info {
     display: flex;
-    flex-wrap: wrap;
     background-color: #ffd7e7;
-    height: 100%;
 }
 
+/*Parent div til alt indhold på om mig siden*/
 .info_con {
-    display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
     width: 80%;
@@ -183,13 +163,14 @@ input[type=submit]:hover {
 
 }
 
+/*child div til om mig*/
 .overskrift {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    z-index: 100;
 }
 
+/*overskrift deco*/
 .overskrift h1 {
     font-family: source-code-pro, monospace;
     font-weight: 400;
@@ -197,13 +178,12 @@ input[type=submit]:hover {
     font-size: 3rem;
     text-decoration: underline;
     display: flex;
-    flex-wrap: flex;
-    text-align: top;
     max-height: 220px;
     max-width: 700px;
     margin: 0 0 0 0;
 }
 
+/*Teksten deco*/
 .info_text {
     position: relative;
     z-index: 1000;
@@ -216,6 +196,7 @@ input[type=submit]:hover {
     width: 100%;
 }
 
+/*Image position + deco*/
 .info_text img {
     position: absolute;
     max-height: 400px;
@@ -226,6 +207,7 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
+/*CV rulletekst*/
 .scrollingtext {
     display: inline-block;
     white-space: nowrap;
@@ -235,139 +217,29 @@ input[type=submit]:hover {
 
 }
 
+/*Selve rulleteksten deco*/
 .scrollingtext a {
     font-family: sans-serif;
     font-size: 3em;
     display: flex;
-    flex-wrap: flex;
     color: #0000ff;
 }
 
+/*Hover CV tekst*/
 .scrollingtext a:hover {
     color: black;
 }
 
-@keyframes scrolling {
-    0% {
-        -transform: translateX(-100%);
-    }
+/********* 5. WEB *********/
 
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-/*to {
-        transform: translateX(0);
-    }
-
-    from {
-        transform: translateX(100%);
-    }
-}*/
-
-/*@keyframes scrolling {
-    to {
-        transform: translateX(-100%);
-    }
-}*/
-
-/********* 5. UX *********/
-.ux_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ux_con1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    height: 100vh;
-    padding-top: 50px;
-    margin-left: 70px;
-    text-align: top;
-}
-
-.uxbox p {
-    font-family: source-code-pro, monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: #0000ff;
-    font-size: 0.8rem;
-    line-height: 1.35;
-}
-
-.uxbox {
-    background-color: white;
-    width: 333px;
-    height: 333px;
-    text-align: center;
-    margin: 5px 5px 5px 5px;
-    transition: background 300ms ease;
-    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.uxbox a {
-    text-decoration: none;
-}
-
-.uxbox:hover {
-    background-color: #25FF2B;
-}
-
-.uxbox:hover h4 {
-    color: black;
-}
-
-.uxbox:hover p {
-    color: white;
-}
-
-.uxtxt {
-    display: none;
-}
-
-.uxbox:hover .uxtxt {
-    display: block;
-}
-
-.moon {
-    width: 45%;
-    height: auto;
-    padding-top: 10px;
-}
-
-.postit {
-    height: 50%;
-    width: auto;
-    padding-top:
-}
-
-.kea {
-    width: 50%;
-    height: auto;
-    padding-top: 40px;
-}
-
-
-.uxbox:hover img {
-    display: none;
-}
-
-
-/********* 6. WEB *********/
-
+/*Section indstillinger*/
 .web_wrapper {
     display: flex;
-    flex-wrap: wrap;
 }
 
+/*indstillinger til parent div*/
 .web_con {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
@@ -375,6 +247,7 @@ input[type=submit]:hover {
     height: 100vh;
 }
 
+/*Boksens tekst deco*/
 .webbox p,
 h4 {
     font-family: source-code-pro, monospace;
@@ -383,62 +256,74 @@ h4 {
     color: #0000ff;
 }
 
+/*Boksens deco*/
 .webbox {
     background-color: white;
     width: 333px;
     height: 333px;
     text-align: center;
     margin: 5px 5px 5px 5px;
-    margin-left: 100px;
+    margin-left: 70px;
     transition: background 300ms ease;
     animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+/*Fjerne link linje*/
 .webbox a {
     text-decoration: none;
 }
 
+/*hover farve*/
 .webbox:hover {
     background-color: #79e0e7;
 }
 
+/*Hover overskrift farve*/
 .webbox:hover h4 {
     color: black;
 }
 
+/*Tekst hover farve*/
 .webbox:hover p {
     color: white;
 }
 
+/*Lidt tekst deco*/
 .webtxt p {
     font-size: 0.8rem;
     line-height: 1.35;
 }
 
-.webbox:hover .webtxt {
-    display: block;
-}
-
+/*Tekst er skjult*/
 .webtxt {
     display: none;
 }
 
+/*Tekst dukker op på hover*/
+.webbox:hover .webtxt {
+    display: block;
+}
+
+/*Billede forsvinder på hover*/
 .webbox:hover .blomst {
     display: none;
 }
 
+/*Billede deco*/
 .blomst {
     width: 50%;
     height: 50%;
 }
 
 
-/********* 7. ANIMATION *********/
+/********* 6. ANIMATION *********/
+
+/*Section */
 .ani_wrapper {
     display: flex;
-    flex-wrap: wrap;
 }
 
+/*Indstillinger til indholdets parent div*/
 .ani_con {
     display: flex;
     flex-wrap: wrap;
@@ -450,7 +335,7 @@ h4 {
     margin-left: 70px;
 }
 
-
+/*P tekst i box, deco*/
 .anibox p {
     font-family: source-code-pro, monospace;
     font-weight: 400;
@@ -460,6 +345,7 @@ h4 {
     line-height: 1.35;
 }
 
+/*Box deco*/
 .anibox {
     background-color: white;
     width: 333px;
@@ -470,29 +356,37 @@ h4 {
     animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+/*href deco*/
 .anibox a {
     text-decoration: none;
 }
 
+/*hover farve*/
 .anibox:hover {
     background-color: #00df8d;
 }
 
+/*href hover color*/
 .anibox:hover h4 {
     color: black;
 }
 
+/*div tekst hover*/
 .anibox:hover p {
     color: white;
 }
 
+/*tekst kommer når hover*/
 .anibox:hover .anitxt {
     display: block;
 }
 
+/*skjuler tekst */
 .anitxt {
     display: none;
 }
+
+/*Ballin skrift billede settings*/
 
 .ballin_tekst {
     width: 70%;
@@ -500,33 +394,36 @@ h4 {
     padding-top: 20px;
 }
 
+/*Basketball billede settings*/
 .ballin {
     width: 50%;
     height: auto;
     padding-top: 20px;
 }
 
+
+/*Mobil billede settings*/
 .mobil {
     height: 60%;
     width: auto;
     padding-top: 20px;
 }
 
+/*Billeder forsvinder på hover*/
 .anibox:hover img {
     display: none;
 }
 
-/********* 8. INDHOLD *********/
+/********* 7. INDHOLD *********/
 
-
+/*Section settings*/
 .ind_wrapper {
     display: flex;
-    flex-wrap: wrap;
 }
 
+/*indhold div settings*/
 .ind_con {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
@@ -534,31 +431,44 @@ h4 {
     height: 100vh;
 }
 
+/*box settings*/
 .indbox {
+    background-color: white;
+    width: 333px;
+    height: 333px;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+    transition: background 300ms ease;
+    animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     margin-left: 70px;
 }
 
+/*hover farve*/
 .indbox:hover {
     background-color: #bc13fe;
-    /*#FFEC00;*/
 }
 
+/**/
 .indbox:hover h4 {
     color: black;
 }
 
+/**/
 .indbox:hover p {
     color: white;
 }
 
+/**/
 .indbox:hover .indtxt {
     display: block;
 }
 
+/**/
 .indtxt {
     display: none;
 }
 
+/*Tekst i box deco*/
 .indbox p {
     font-family: source-code-pro, monospace;
     font-weight: 400;
@@ -568,7 +478,54 @@ h4 {
     line-height: 1.35;
 }
 
-.indbox {
+.indbox a {
+    text-decoration: none;
+}
+
+/*billede deco*/
+.cphww {
+    width: 40%;
+    padding-top: 20px;
+}
+
+/**/
+.indbox:hover .cphww {
+    display: none;
+}
+
+
+/********* 8. UX *************/
+/*section settings*/
+.ux_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*parent div indstillinger*/
+.ux_con1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    padding-top: 50px;
+    margin-left: 70px;
+}
+
+/*p deco i div*/
+.uxbox p {
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #0000ff;
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+
+/*div indstillinger*/
+.uxbox {
     background-color: white;
     width: 333px;
     height: 333px;
@@ -576,18 +533,90 @@ h4 {
     margin: 5px 5px 5px 5px;
     transition: background 300ms ease;
     animation: fadein 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    margin-left: 100px;
 }
 
-.indbox a {
+/**/
+.uxbox a {
     text-decoration: none;
 }
 
-.cphww {
-    width: 40%;
-    padding-top: 20px;
+/**/
+.uxbox:hover {
+    background-color: #25FF2B;
 }
 
-.indbox:hover .cphww {
+/**/
+.uxbox:hover h4 {
+    color: black;
+}
+
+/**/
+.uxbox:hover p {
+    color: white;
+}
+
+/**/
+.uxtxt {
     display: none;
+}
+
+/**/
+.uxbox:hover .uxtxt {
+    display: block;
+}
+
+/*billede indstilling*/
+.moon {
+    width: 45%;
+    height: auto;
+    padding-top: 10px;
+}
+
+/*billede indstilling*/
+.postit {
+    height: 50%;
+    width: auto;
+}
+
+/*billede indstilling*/
+.kea {
+    width: 50%;
+    height: auto;
+    padding-top: 40px;
+}
+
+/**/
+.uxbox:hover img {
+    display: none;
+}
+
+/********* 9. MEDIA + KEYFRAMES ********/
+
+/*Gemmer Desktop menu, når skærm når 1186px*/
+@media screen and (max-width: 1186px) {
+    #burger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+/*Gør at baggrund og navn billede følger med skærmen og flexer*/
+@media only screen and (min-width: 177px) {
+    #fp_header {
+        background-position: 50% 0%
+    }
+}
+
+/*Keyframes der gør at teksten ruller*/
+@keyframes scrolling {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
