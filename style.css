@@ -344,12 +344,12 @@ input[type=submit]:hover {
     color: white;
 }
 
-.uxbox:hover .uxtxt {
-    display: block;
-}
-
 .uxtxt {
     display: none;
+}
+
+.uxbox:hover .uxtxt {
+    display: block;
 }
 
 .moon {
